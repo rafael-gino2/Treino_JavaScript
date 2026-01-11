@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numeros = []
+        for (let num_inicio = 0; num_inicio < 3; num_inicio++) {
+            let seu_num = Number(prompt(`Insira seu número ${num_inicio}: `))
+            numeros.push(seu_num)
+        }
+        let maior_num = Math.max(...numeros) // O ... serve para que o JS reconheça os valores da lista numeros, sem os 3 pontos reconhece como só um argumento (errado pois max nn aceita só um argumento)
+        console.log("O seu maior número é: ", maior_num)
+
+    </script>
+</body>
+</html>
